@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 62.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body,
+.journal-header,
+.location {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+body {
+  min-height: 100vh;
+  /* background: linear-gradient(to right, #ffffff, #ffefba) no-repeat; */
+  /* background-size: contain; */
+  background-color: #fff0c2;
+  font-family: "Inter", sans-serif;
+  /* margin: auto; */
+}
+
+.app {
+  /* background-color: rebeccapurple; */
+  width: 60rem;
+  background-color: white;
+  /* flex-direction: column; */
+}
+
+.journal-header {
+  background-color: #f55a5a;
+  padding: 1.5rem 0;
   color: white;
+  gap: 0.5rem;
+  margin-bottom: 5.5rem;
+  font-size: large;
 }
 
-.App-link {
-  color: #61dafb;
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem 4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.section:nth-child(6) {
+  padding-bottom: 3rem;
+}
+
+.section > img {
+  width: 125px;
+  height: 168px;
+  border-radius: 0.7rem;
+}
+
+.location {
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.location > a {
+  color: #7f7d7d;
+  font-size: 1.1rem;
+}
+
+.country-name > img {
+  width: 0.8rem;
+  margin-right: 0.2rem;
+}
+
+.country-name > span {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: x-large;
+  margin: 0.7rem 0 1.5rem;
+}
+
+.date {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.location-info {
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  word-spacing: 0.4rem;
+}
+
+.line {
+  /* color: #7f7d7d; */
+  border: none;
+  background-color: rgb(215, 208, 208);
+  height: 0.1rem;
+  margin: 2rem auto;
+  width: 85%;
+  /* text-align: center; */
+}
+
+@media screen and (max-width: 600px) {
+  .app {
+    width: 100%;
   }
 }
